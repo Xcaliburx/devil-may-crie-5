@@ -4,18 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Devil May Crie 5</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-sm bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img
             src="asset/logo.png"
             width="140"
@@ -36,7 +31,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarItem">
-          <ul class="navbar-nav me-auto">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -52,7 +47,7 @@
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" href="#">About</a>
+                <a class="dropdown-item" href="about.html">About</a>
                 <a class="dropdown-item" href="#">System Requirement</a>
                 <a class="dropdown-item" href="#">Characters</a>
               </div>
@@ -60,22 +55,90 @@
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <button type="button" class="btn btn-outline-info">
+              <a class="btn btn-outline-info" href="register.html">
                 Register
-              </button>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container" style="height: 100vh;">
-        <h1 class="display-4">Fluid jumbotron</h1>
-        <p class="lead">
-          This is a modified jumbotron that occupies the entire horizontal space
-          of its parent.
+    <div class="jumbotron-fluid jumbo">
+      <div class="container">
+        <h1 class="display-4 text-light bg-dark ml-auto p-2" style="width: fit-content;">Devil May Crie 5</h1>
+        <p class="lead text-light ml-auto bg-dark p-2 mt-2 text-end" style="width: fit-content">
+          Legendary DMC action returns, made all the more stylish <br>
+          by the power modern gaming has to offer.
         </p>
+      </div>
+    </div>
+
+    <div class="about">
+      <h1 class="text-white fs-1">About</h1>
+      <p class="text-white bg-dark p-2 fs-5" style="width: fit-content">
+        Devil May Cry 5 is a 2019 action-adventure game developed and published by Capcom. <br>
+        It is the sixth installment overall and the fifth mainline installment in the Devil <br>
+        May Cry series. Capcom released it for Microsoft Windows, PlayStation 4, and  <br>
+        Xbox One on 8 March 2019.</p>
+        <a class="btn btn-light ml-2 col-2">Learn More</a>
+    </div>
+
+    <div class="character bg-dark py-5">
+      <div class="d-flex flex-row">
+        <img class="ml-5" src="asset/dante.png" alt="">
+        <div class="pt-5 mt-5">
+          <h1 class="text-white fs-1 mt-5 pt-5">Characters</h1>
+          <h2 class="text-dark bg-white px-2 mt-4" style="width: fit-content;">Tony Redgrave, Dante</h2>
+          <p class="text-white mt-4 fs-5">He is the second son of the demon Sparda and the human Eva, <br>
+            the younger twin brother of Vergil, and the uncle of Nero. Dante is a paranormal mrrcenary, <br>
+            private investigator and vigilante Devil Hunter dedicated to exterminating evil demons and <br>
+            other malevolent supernatural forces; a mission he follows in pursuit of those that killed <br>
+            his mother and corrupted his brother.</p>
+          <a class="btn btn-light col-3">More Characters</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="system">
+      <h1 class="text-white text-center mb-5">System Requirements</h1>
+      <table class="table w-50 table-light m-auto">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Minimum</th>
+            <th scope="col">Recommended</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CPU</td>
+            <td>Intel® Core™ i5-4460, AMD FX™-6300, or bette</td>
+            <td>Intel® Core™ i7-3770, AMD FX™-9590, or better</td>
+          </tr>
+          <tr>
+            <td>RAM</td>
+            <td>8 GB</td>
+            <td>8 GB</td>
+          </tr>
+          <tr>
+            <td>Video Card</td>
+            <td>NVIDIA® GeForce® GTX 760 or AMD Radeon™ R7 260x with 2GB Video RAM, or better</td>
+            <td>NVIDIA® GeForce® GTX 1060 with 6GB VRAM, AMD Radeon™ RX 480 with 8GB VRAM, or better</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <a class="btn btn-light col-2 mt-5 d-block m-auto">Learn More</a>
+    </div>
+
+    <div class="game">
+      <h1 class="text-white text-center">Game</h1>
+      <h1 class="text-white text-center">Available on</h1>
+      <div class="d-flex flex-row justify-content-center mt-4">
+        <img src="asset/logo_xbox.png" alt="">
+        <img class="ml-5 mr-5" src="asset/logo_ps4.png" alt="">
+        <img src="asset/logo_steam.png" alt="">
       </div>
     </div>
 
@@ -94,7 +157,7 @@
                 <div class="form-outline mb-4">
                   <input
                     type="email"
-                    id="formSubscribe"
+                    id="formlubscribe"
                     class="form-control"
                     placeholder="Email Address"
                   />
@@ -116,19 +179,5 @@
       </div>
     </footer>
   </body>
-  <script
-    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"
-  ></script>
+  <script src="js/bootstrap.bundle.js"></script>
 </html>

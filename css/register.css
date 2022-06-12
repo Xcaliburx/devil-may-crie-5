@@ -14,3 +14,13 @@
 .copyright {
   background-color: cornsilk;
 }
+
+.register {
+    background-image: url("../asset/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.register-form{
+    background-color: white;
+}
