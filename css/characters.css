@@ -7,6 +7,10 @@
   scroll-behavior: smooth;
 }
 
+.characters h1 {
+  font-weight: bold;
+}
+
 .characters img {
   height: 500px;
   padding-top: 40px;
