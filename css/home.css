@@ -6,17 +6,8 @@
   font-family: 'Lato', sans-serif;
 }
 
-.navbar-nav > li {
-  padding-left: 20px;
-  padding-right: 10px;
-}
-
-.copyright {
-  background-color: cornsilk;
-}
-
 .jumbo {
-  background-image: url("/asset/jumbotron.jpg");
+  background-image: url('/asset/jumbotron.jpg');
   background-repeat: no-repeat;
   height: 90vh;
   background-size: 100% 100%;
@@ -25,31 +16,31 @@
 }
 
 .about {
-  background-image: url("/asset/about.jpeg");
+  background-image: url('/asset/about.jpeg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 80vh;
   padding: 200px;
 }
 
-.about-text{
+.about-text {
   background-color: black;
   width: fit-content;
 }
 
-.character img{
+.character img {
   height: 85vh;
 }
 
-.system{
-  background-image: url("/asset/bg.jpg");
+.system {
+  background-image: url('/asset/bg.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 80vh;
   padding-top: 200px;
 }
 
-.game{
+.game {
   background-color: black;
   padding-top: 200px;
   padding-bottom: 200px;

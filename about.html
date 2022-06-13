@@ -4,10 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Devil May Crie 5</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/navbar-footer.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-light">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
@@ -31,6 +32,9 @@
 
         <div class="collapse navbar-collapse" id="navbarItem">
           <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -40,23 +44,33 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Menu
+                Characters
               </a>
               <div
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" href="#">About</a>
-                <a class="dropdown-item" href="#">System Requirement</a>
-                <a class="dropdown-item" href="#">Characters</a>
+                <a class="dropdown-item" href="characters.html#dante">Dante</a>
+                <a class="dropdown-item" href="characters.html#lady">Lady</a>
+                <a class="dropdown-item" href="characters.html#nero">Nero</a>
+                <a class="dropdown-item" href="characters.html#trish">Trish</a>
+                <a class="dropdown-item" href="characters.html#v">V</a>
+                <a class="dropdown-item" href="characters.html#vergil">
+                  Vergil
+                </a>
               </div>
+            </li>
+            <li class="nav-item">
+              <a href="system-requirements.html" class="nav-link">
+                System Requirements
+              </a>
             </li>
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <button type="button" class="btn btn-outline-info">
+              <a class="btn btn-outline-info" href="register.html">
                 Register
-              </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -64,115 +78,158 @@
     </nav>
 
     <div>
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="asset/img1.webp" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block text-white bg-dark p-3">
-                  <h2 class="mb-4">About</h2>
-                  <p>Devil May Cry 5 is a 2019 action-adventure game developed and published by Capcom. 
-                      It is the sixth installment overall and the fifth mainline installment in the Devil May Cry series. 
-                      Capcom released it for Microsoft Windows, PlayStation 4, and Xbox One on 8 March 2019. 
-                      The game takes place five years after Devil May Cry 4 and follows a trio of warriors with demonic 
-                      powers, the returning Dante, Nero, and a new protagonist named V, as they attempt to stop the 
-                      Demon King Urizen from destroying the human world. Across their journey in Red Grave City, 
-                      the player can use these characters in different missions. Each of them has their own way of 
-                      fighting and becoming stronger. As this happens, the mystery behind V is revealed, along with 
-                      his connection with Urizen.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="asset/img2.webp" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block text-white bg-dark p-3">
-                  <h2 class="mb-4">Story</h2>
-                  <p>On 16 May, devil hunter Nero hunts a demon named Urizen after a dying man takes his demonic arm 
-                      and the sword Yamato. Traveling to Red Grave City, he finds a demonic tree called Qliphoth planted 
-                      in the city, killing people for their blood. Dante's group confronts Urizen but, empowered by the 
-                      Qliphoth, the new demon king incapacitates them and overpowers Nero when he intervenes. Dante stops 
-                      Urizen from capturing Nero but is defeated and ejected from the Qliphoth with his sword Rebellion 
-                      shattered. His allies Lady and Trish are captured to be used as demon-cores while a client of Dante, 
-                      V, convinces the weakened Nero to escape. On 15 June, Nero returns to Red Grave outfitted 
-                      with the "Devil Breaker" prosthetic arm, made by his friend and gunsmith, Nico. 
-                      Nero meets up with V, who is seeking Qliphoth for its fruit—born of condensed human blood—which 
-                      makes whoever consumes it the king of the Underworld. As the pair destroy the Qliphoth's roots 
-                      while searching for Dante, Nero rescues Lady while V splits off to discover the Devil Sword 
-                      Sparda - along with a hibernating Dante, whose presence was hidden by the sword</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="asset/img3.webp" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block text-white bg-dark p-3">
-                  <h2 class="mb-4">Special Edition</h2>
-                  <p>Alongside all previously-released downloadable content, other additions include Vergil as a 
-                      playable character, ray tracing graphics options, and two additional game modes; Legendary 
-                      Dark Knight mode, which significantly increases the number of enemies in each level; and Turbo 
-                      mode, which increases the game speed by 20%. Turbo mode was previously included in Devil May Cry 3: 
-                      Special Edition and Devil May Cry 4: Special Edition. Players who own the original version of 
-                      Devil May Cry 5 can also purchase Vergil separately as downloadable content.
-                </div>
-              </div>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleCaptions"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="asset/img1.webp" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block text-white bg-dark p-3"
+            >
+              <h2 class="mb-4">About</h2>
+              <p>
+                Devil May Cry 5 is a 2019 action-adventure game developed and
+                published by Capcom. It is the sixth installment overall and the
+                fifth mainline installment in the Devil May Cry series. Capcom
+                released it for Microsoft Windows, PlayStation 4, and Xbox One
+                on 8 March 2019. The game takes place five years after Devil May
+                Cry 4 and follows a trio of warriors with demonic powers, the
+                returning Dante, Nero, and a new protagonist named V, as they
+                attempt to stop the Demon King Urizen from destroying the human
+                world. Across their journey in Red Grave City, the player can
+                use these characters in different missions. Each of them has
+                their own way of fighting and becoming stronger. As this
+                happens, the mystery behind V is revealed, along with his
+                connection with Urizen.
+              </p>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
+          <div class="carousel-item">
+            <img src="asset/img2.webp" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block text-white bg-dark p-3"
+            >
+              <h2 class="mb-4">Story</h2>
+              <p>
+                On 16 May, devil hunter Nero hunts a demon named Urizen after a
+                dying man takes his demonic arm and the sword Yamato. Traveling
+                to Red Grave City, he finds a demonic tree called Qliphoth
+                planted in the city, killing people for their blood. Dante's
+                group confronts Urizen but, empowered by the Qliphoth, the new
+                demon king incapacitates them and overpowers Nero when he
+                intervenes. Dante stops Urizen from capturing Nero but is
+                defeated and ejected from the Qliphoth with his sword Rebellion
+                shattered. His allies Lady and Trish are captured to be used as
+                demon-cores while a client of Dante, V, convinces the weakened
+                Nero to escape. On 15 June, Nero returns to Red Grave outfitted
+                with the "Devil Breaker" prosthetic arm, made by his friend and
+                gunsmith, Nico. Nero meets up with V, who is seeking Qliphoth
+                for its fruit—born of condensed human blood—which makes whoever
+                consumes it the king of the Underworld. As the pair destroy the
+                Qliphoth's roots while searching for Dante, Nero rescues Lady
+                while V splits off to discover the Devil Sword Sparda - along
+                with a hibernating Dante, whose presence was hidden by the sword
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="asset/img3.webp" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block text-white bg-dark p-3"
+            >
+              <h2 class="mb-4">Special Edition</h2>
+              <p>
+                Alongside all previously-released downloadable content, other
+                additions include Vergil as a playable character, ray tracing
+                graphics options, and two additional game modes; Legendary Dark
+                Knight mode, which significantly increases the number of enemies
+                in each level; and Turbo mode, which increases the game speed by
+                20%. Turbo mode was previously included in Devil May Cry 3:
+                Special Edition and Devil May Cry 4: Special Edition. Players
+                who own the original version of Devil May Cry 5 can also
+                purchase Vergil separately as downloadable content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
 
     <footer class="bg-light text-center">
-        <div class="container p-4 pb-0">
-          <section class="">
-            <form action="">
-              <div class="row d-flex justify-content-center">
-                <div class="col-auto">
-                  <p class="pt-2">
-                    <strong>Sign up for our newsletter</strong>
-                  </p>
-                </div>
-  
-                <div class="col-md-5 col-12">
-                  <div class="form-outline mb-4">
-                    <input
-                      type="email"
-                      id="formSubscribe"
-                      class="form-control"
-                      placeholder="Email Address"
-                    />
-                  </div>
-                </div>
-  
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-info mb-4">
-                    Subscribe
-                  </button>
+      <div class="container p-4 pb-0">
+        <section class="">
+          <form action="">
+            <div class="row d-flex justify-content-center">
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+
+              <div class="col-md-5 col-12">
+                <div class="form-outline mb-4">
+                  <input
+                    type="email"
+                    id="formlubscribe"
+                    class="form-control"
+                    placeholder="Email Address"
+                  />
                 </div>
               </div>
-            </form>
-          </section>
-        </div>
-  
-        <div class="copyright text-center p-3">
-          © 2020 Copyright Severian & Benny
-        </div>
-      </footer>
-    </body>
-    <script 
-        src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-        crossorigin="anonymous"
-    ></script>
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" 
-        crossorigin="anonymous"
-    ></script>
-  </html>
+
+              <div class="col-auto">
+                <button type="submit" class="btn btn-info mb-4">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <div class="copyright text-center p-3">
+        © 2020 Copyright Severian & Benny
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"
+  ></script>
+</html>

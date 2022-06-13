@@ -6,12 +6,11 @@
   font-family: 'Lato', sans-serif;
 }
 
-.register {
-  background-image: url('../asset/bg.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+.navbar-nav > li {
+  padding-left: 20px;
+  padding-right: 10px;
 }
 
-.register-form {
-  background-color: white;
+.copyright {
+  background-color: cornsilk;
 }

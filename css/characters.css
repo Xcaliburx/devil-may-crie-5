@@ -7,15 +7,6 @@
   scroll-behavior: smooth;
 }
 
-.navbar-nav > li {
-  padding-left: 20px;
-  padding-right: 10px;
-}
-
-.copyright {
-  background-color: cornsilk;
-}
-
 .characters img {
   height: 500px;
   padding-top: 40px;
